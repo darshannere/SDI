@@ -11,6 +11,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
+      routes: {
+        '/': (context) => const MyHomePage(),
+      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
