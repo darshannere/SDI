@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:sdppr/login/signup.dart';
+import 'login/home.dart';
+import 'dart:ui';
 
 void main() {
   runApp(const MyApp());
@@ -11,13 +14,14 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      routes: {
-        '/': (context) => const MyHomePage(),
-      },
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      initialRoute: '/',
+      routes: {
+        '/': (context) => LoginScreen(),
+        'signup': (context) => Signup(),
+      },
     );
   }
 }
