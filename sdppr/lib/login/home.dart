@@ -303,6 +303,14 @@ class _LoginScreenState extends State<LoginScreen> {
                       _buildSignInWithText(),
                       _buildSocialBtnRow(),
                       _buildSignupBtn(),
+                      TextButton(
+                          onPressed: () {
+                            Navigator.pushNamed(context, 'home');
+                          },
+                          child: Text(
+                            "Home Page",
+                            style: TextStyle(color: Colors.white),
+                          ))
                     ],
                   ),
                 ),

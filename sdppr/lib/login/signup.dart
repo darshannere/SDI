@@ -34,19 +34,6 @@ class _SignupState extends State<Signup> {
                       ),
                     ),
                   ),
-                  Container(
-                height: double.infinity,
-                child: SingleChildScrollView(
-                  physics: AlwaysScrollableScrollPhysics(),
-                  padding: EdgeInsets.symmetric(
-                    horizontal: 40.0,
-                    vertical: 120.0,
-                  ),
-                  child: Column(
-                    children: [
-                      Text('Sign Up')
-                    ],
-                  ),
-                ]))))));
+                ]))));
   }
 }
